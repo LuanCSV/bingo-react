@@ -1,0 +1,99 @@
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+.bolas {
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bolas .bola {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    font-size: 14px;
+    margin: 3px;
+}
+
+.bolas .bola.sorteada {
+    background-color: red;
+    color: white;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.ultimos {
+    display: flex;
+    margin: 5px;
+    background-color: #efefef;
+    border: 1px solid #900;
+    color: #900;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes button {
+    display: flex;
+    margin: 5px;
+    background-color: #080;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botoes button.azul {
+    background-color: blue;
+}
+
+.bolaSorteada { 
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all ease-in-out  .5s;
+}
+
+.bolaSorteada.sumir{
+    opacity: 0;
+}
+
+.bolaSorteada div{
+    font-size: 80px;
+    color: red;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
