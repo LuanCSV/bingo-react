@@ -1,0 +1,51 @@
+.App-body {
+    height: 80vh;
+    max-height: 80vh;
+    background-color: #20232a;
+    padding: 10px;
+  }
+  
+  .App-body .App-bingo {
+    min-width: 230px;
+    max-width: 230px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+    list-style: none;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .App-body .App-bingo li {
+    width: 20px;
+    height: 20px;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* background-color: #1fbde9; */
+    background-color: #e7e7e7;
+    /* color: #282c34; */
+    border-radius: 50%;
+    font-size: 0.6rem;
+  }
+  
+  .App-body button {
+    outline: none;
+    width: 100px;
+    margin: 10px 5px;
+    padding: 5px 0px;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.7rem;
+  
+    transition: filter ease-in-out 0.2s;
+  }
+  .App-body button:hover {
+    cursor: pointer;
+    filter: saturate(50%);
+  }

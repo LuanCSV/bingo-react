@@ -1,20 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Bingo from './components/Bingo';
 
 function App() {
+
+
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bingo virtual
-        </p>
+        <h1>Bingo Sorteio Eletronico</h1>
       </header>
-      <main className="App-body">
-        <div>
-          <p>alo</p>
-        </div>
-      </main>
+      <Bingo/>
     </div>
   );
 }
